@@ -1,0 +1,14 @@
+.cards {
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+    gap: 50px;
+    padding: 0;
+}
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 20%;
+    list-style: none;
+    padding: 20px;
+}

@@ -1,0 +1,12 @@
+.conteudo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.titulo{
+    text-align: center;
+    margin-top: 50px
+}

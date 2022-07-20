@@ -1,0 +1,19 @@
+.header {
+    align-items: center;
+    background-color: red;
+    display: flex;
+    gap: 10px;
+    padding: 30px 100px;
+    color: white;
+}
+
+.listaDeitada {
+    display: flex;
+    gap: 35px;
+    list-style: none;  
+}
+
+.listaDeitada li a {
+    color: white;
+    border-bottom: 1px solid white;
+}

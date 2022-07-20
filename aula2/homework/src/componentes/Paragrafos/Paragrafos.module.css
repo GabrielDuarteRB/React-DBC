@@ -1,0 +1,11 @@
+.paragrafo {
+    background-color: white;
+    color: black;
+    padding: 15px 100px;
+}
+
+.invertido {
+    background-color: darkslategray;
+    color: white;
+    padding: 15px 100px;
+}

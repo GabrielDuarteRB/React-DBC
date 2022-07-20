@@ -1,0 +1,19 @@
+.footer {
+    background-color: red;
+    color: white;
+    padding: 20px 100px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;  
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.lista li a {
+    color: white;
+    border-bottom: 1px solid white;
+}
