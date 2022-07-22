@@ -41,7 +41,6 @@
 }
 .endHeader {
     padding: 0 50px;
-    border-bottom: 1px solid black;
 }
 .endHeader li{
     padding: 5px;
@@ -52,7 +51,6 @@
 }
 .endHeader li:hover{
     background-color: #f7f7f7;
-    
 }
 header::after {
     border-top: 1px solid #000;

@@ -1,0 +1,45 @@
+.home{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 2.3fr 1fr;
+}
+
+.home > div:first-child {
+    position: relative;
+    padding-right: 8px;
+}
+
+.home > div:first-child::after {
+    border-right: 1px solid #121212;
+    content: '';
+    position: absolute;
+    display: block;
+    top: 32px;
+    right: -12px;
+    height: 98.5%;
+}
+
+.postDeitado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.postDeitado > div {
+    border-top: 1px solid #121212;
+    padding-top: 15px;
+    position: relative;
+}
+
+
+.postDeitado > div:first-child::after {
+    border-right: 1px solid #121212;
+    content: '';
+    position: absolute;
+    display: block;
+    top:0;
+    right: -12px;
+    height: 90%;
+}
+
