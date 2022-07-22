@@ -1,0 +1,44 @@
+.titulo, .listaDeitada {
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.lista li, .listaComIcones li, .listaDeitada li {
+    box-sizing: border-box;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+
+.lista li:last-child, .listaComIcones li:last-child, .listaDeitada li:last-child{
+    margin-bottom: 0;
+}
+
+.lista a, .listaComIcones a, .listaDeitada a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.listaDeitada > li > a {
+    font-size: 11px ;
+}
+
+.lista a:hover, .listaComIcones a:hover {
+    text-decoration: underline;
+}
+
+.listaComIcones a {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.listaDeitada{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}

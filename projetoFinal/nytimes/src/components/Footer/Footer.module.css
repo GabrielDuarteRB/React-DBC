@@ -1,0 +1,49 @@
+footer::before {
+    background-color: rgb(255, 255, 255);
+    border-top: 2px solid rgb(226, 226, 226);
+    border-bottom: 2px solid rgb(226, 226, 226);
+    content: '';
+    display: block;
+    height: 1px;
+}
+
+footer > div:first-of-type {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+footer > div:first-of-type > a {
+    align-items: center ;
+    color: rgb(86, 123, 149);
+    display: flex;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+footer > div > svg {
+    height: 44px;
+    width: 184px;
+}
+
+.gridFooter {
+    border-bottom: 1px solid rgb(226, 226, 226);
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 8px;
+}
+
+.gridFooter > div:last-child {
+    border-left: 1px solid rgb(226, 226, 226);;
+    padding-left: 20px;
+}
+
+.gridFooter > div:last-child > div:first-of-type {
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding: 16px 0 8px;
+}
+
+.gridFooter > div:last-child > div:last-of-type {
+    padding-top: 8px;
+}
