@@ -1,0 +1,40 @@
+.headerSaudeFirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.headerSaudeFirst > div:first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 280px;
+}
+.headerSaudeFirst > div:first-child span{
+    font-weight: bold;
+}
+.headerSaudeFirst > div:first-child span:nth-child(3){
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+.headerSaudeFirst > div:first-child span{
+    cursor: pointer;
+    padding: 5px 8px;
+}
+.headerSaudeFirst > div:first-child span:hover{
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+.headerSaudeFirst svg{
+    height: 25px;
+}
+.headerSaudeFirst > div:last-child{
+    display: flex;
+    gap:5px;
+}
+.headerSaudeSecond > div{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: xx-large;
+}

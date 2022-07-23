@@ -9,7 +9,8 @@ const Home = ({api}) => {
     const opnioes = api.filter(a => {
         return a.section === 'opinion'
     })
-    console.log(cincoInformacoesEsquerda)
+    console.log(opnioes)
+    
 
   return (
     <section className={styles.home}>
@@ -51,9 +52,62 @@ const Home = ({api}) => {
             }
             
         </div>
-        <div>
-
-        </div>
+        <aside>
+            <div className={styles.postAside}>
+                {
+                    api.slice(7,8).map((item, index)=>(
+                        <Post
+                            key={index}
+                            urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                            titulo={item.title}
+                            conteudo= {item.abstract}
+                            largura='100%'
+                            altura ='250px'
+                        />
+                    ))
+                }
+                <div className={styles.postAsideDuplo}>
+                    {
+                        api.slice(8,10).map((item, index) =>(
+                            <Post
+                                key={index}
+                                urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                                titulo={item.title}
+                                largura='170px'
+                                altura ='100px'
+                            />
+                        ))
+                    }
+                </div>
+            </div>
+            
+            <div className={styles.opnioes}>
+                <h1>Opnion</h1>
+            {
+                opnioes.map((item, i) =>(
+                    <PostDeitado
+                        key={i}
+                        titulo={item.title}
+                        criador={item.kicker}
+                    />
+                ))
+            }
+            </div>
+            <div className={styles.caseMissed}>
+                <h1>In Case You Missed It</h1>
+            {
+                api.slice(11, 16).map((item, x) =>(
+                    <Post
+                        key={x}
+                        urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                        titulo={item.title}
+                        largura= '100px'
+                        altura= '100px'
+                    />
+                ))
+            }
+            </div>
+        </aside>
     </section>
   )
 }

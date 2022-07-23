@@ -12,9 +12,10 @@ const Post = ({titulo, conteudo, urlImagem, altura, largura}) => {
   )
 }
 
-const PostDeitado = ({titulo, conteudo}) => {
+const PostDeitado = ({criador, titulo, conteudo}) => {
     return (
       <div>
+            <span>{criador}</span>
             <h3>{titulo}</h3>
             <small>{conteudo}</small>
       </div>

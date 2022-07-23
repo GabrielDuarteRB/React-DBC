@@ -1,0 +1,39 @@
+.headerMundoFirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.headerMundoFirst > div:first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 280px;
+}
+.headerMundoFirst > div:first-child span{
+    font-weight: bold;
+}
+.headerMundoFirst > div:first-child span:nth-child(3){
+    padding-left: 30px;
+}
+
+.headerMundoFirst > div:first-child span{
+    cursor: pointer;
+    padding: 5px 8px;
+}
+.headerMundoFirst > div:first-child span:hover{
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+.headerMundoFirst svg{
+    height: 25px;
+}
+.headerMundoFirst > div:last-child{
+    display: flex;
+    gap:5px;
+}
+.headerMundoSecond > div{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: xx-large;
+}
