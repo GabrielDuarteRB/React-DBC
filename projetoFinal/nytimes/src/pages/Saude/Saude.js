@@ -1,9 +1,11 @@
-import SaudeHeader from './SaudeHeader'
+import { HeaderSubtopicos } from '../../components/Header/Header'
 
 const Saude = () =>{
     return(
         <div>
-            <SaudeHeader/>
+            <HeaderSubtopicos
+                titulo='Health'
+            />
         </div>
     )
 }

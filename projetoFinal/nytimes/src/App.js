@@ -2,12 +2,12 @@ import './App.css';
 import axios from 'axios'
 import {useEffect, useState} from 'react'
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import {Header} from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Mundo from './pages/Mundo/Mundo';
 import Politica from './pages/Politica/Politica';
 import Saude from './pages/Saude/Saude';
-import CienciaTecnologia from './pages/CienciaTecnologia/CienciaTecnologia';
+import Ciencia from './pages/Ciencia/Ciencia';
 
 function App() {
 
@@ -31,11 +31,11 @@ function App() {
     <div className="container">
       {/* <Header/>
       <Home api={informacoes}/>
-      <Footer/>
-      <Mundo/>  */}
-      <Politica/> 
+      <Footer/> */}
+      {/* <Mundo/> */}
+      {/* <Politica/>  */}
       {/* <Saude/>  */}
-      {/* <CienciaTecnologia/>  */}
+      <Ciencia/> 
     </div>
      
   );

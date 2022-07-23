@@ -14,3 +14,47 @@
     color: #5a5a5a;
 }
 
+.postSubtopicos {
+    margin: 0 0 25px 30px;
+    padding-bottom: 25px;
+}
+
+.postSubtopicos > div {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.postSubtopico > p {
+    color: #121212;
+    line-height: 1.375rem;
+    font-size: 15px;
+}
+
+.postSubtopicos > small {
+    color: #727272;
+    font-size: 11px;
+}
+
+.postLatest {
+    align-items: flex-start;
+    border-bottom: 1px solid #727272;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.postLatest h1 {
+    font-size: 23px
+}
+
+.postLatest p {
+    font-size: 14px
+}
+
+.postLatest span {
+    font-size: 11px
+}

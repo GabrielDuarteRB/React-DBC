@@ -1,9 +1,11 @@
-// import styles from './Mundo.module.css'
-import HeaderMundo from './HeaderMundo'
+import { HeaderSubtopicos } from '../../components/Header/Header'
+
 const Mundo = () =>{
     return(
         <div>
-            <HeaderMundo/>
+            <HeaderSubtopicos
+                titulo='World'
+            />
             <h1>mundo</h1>
         </div>
     )

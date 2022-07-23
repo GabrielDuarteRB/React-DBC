@@ -52,10 +52,53 @@
 .endHeader li:hover{
     background-color: #f7f7f7;
 }
-header::after {
+.headerPrincipal::after {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     content: '';
     display: block;
     height: 2px;
+}
+
+/* Header Subtopicos */
+
+.headerSubtopicosFirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.headerSubtopicosFirst > div:first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 280px;
+}
+.headerSubtopicosFirst > div:first-child span{
+    font-weight: bold;
+}
+.headerSubtopicosFirst > div:first-child span:nth-child(3){
+    padding-left: 30px;
+}
+
+.headerSubtopicosFirst > div:first-child span{
+    cursor: pointer;
+    padding: 5px 8px;
+}
+.headerSubtopicosFirst > div:first-child span:hover{
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+.headerSubtopicosFirst svg{
+    height: 25px;
+}
+.headerSubtopicosFirst > div:last-child{
+    display: flex;
+    gap:5px;
+}
+.headerSubtopicosSecond > div{
+    border-bottom: 1px solid #1f1f1f;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 60px;
 }

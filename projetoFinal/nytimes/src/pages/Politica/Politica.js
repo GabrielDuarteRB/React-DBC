@@ -1,9 +1,11 @@
-import PoliticaHeader from './PoliticaHeader'
+import { HeaderSubtopicos } from '../../components/Header/Header'
 
 const Politica = () =>{
     return(
         <div>
-            <PoliticaHeader/>
+            <HeaderSubtopicos
+                titulo='Politics'
+            />
         </div>
     )
 }
