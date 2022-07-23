@@ -37,6 +37,7 @@ const SubPosts = ({categorias, pagina}) => {
                         informacoes.slice(0, 1).map((item, index) => (
                                 <Post
                                     key={index}
+                                    idElemento={informacoes.indexOf(item)}
                                     titulo={item.title}
                                     conteudo={item.abstract}
                                     criador={item.byline}
@@ -51,6 +52,8 @@ const SubPosts = ({categorias, pagina}) => {
                     {
                         informacoes.slice(1, 4).map((item, index) => (
                                 <PostLateralSubtopicos
+                                    categoria={pagina}
+                                    idElemento={informacoes.indexOf(item)}
                                     key={index}
                                     titulo={item.title}
                                     conteudo={item.abstract}

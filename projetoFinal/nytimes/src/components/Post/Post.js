@@ -17,16 +17,19 @@ const Post = ({titulo, conteudo, urlImagem, altura, largura, criador, idElemento
   )
 }
 
-const PostLateralSubtopicos = ({titulo, conteudo, urlImagem, altura, largura, criador, idElemento}) => {
+const PostLateralSubtopicos = ({titulo, conteudo, urlImagem, altura, largura, criador, idElemento, categoria}) => {
   
   return (
+
     <div id={idElemento} className={styles.postSubtopicos}>
+      <Link to={`/Post/${idElemento}/${categoria}`}>
         <div>
             <h3>{titulo}</h3>
             <img style={{width: largura, height: altura}} src={urlImagem}/>
         </div>
         <p>{conteudo}</p>
         <small>{criador}</small>
+      </Link>
     </div>
   )
 }

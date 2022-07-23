@@ -1,0 +1,18 @@
+.pagePost > div > a{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.pagePost >div > a > div{
+    padding: 0 150px;
+}
+.pagePost > div > a > div> h3{
+    font-size: 40px;
+    text-align: center;
+}
+.pagePost > div > a > div> small{
+    text-align: center;
+    font-size: 23px;
+
+}

@@ -33,6 +33,7 @@ const Home = ({api}) => {
                     {
                         api.slice(2, 4).map((item, index) => (
                             <PostDeitado 
+                            categoria='home'
                             idElemento={api.indexOf(item)}
                             key={index}
                             titulo={item.title}
@@ -44,6 +45,8 @@ const Home = ({api}) => {
                 {
                     api.slice(4, 7).map((item, index) => (
                             <Post
+                                categoria='home'
+                                idElemento={api.indexOf(item)}
                                 key={index}
                                 titulo={item.title}
                                 conteudo={item.abstract}
@@ -57,6 +60,7 @@ const Home = ({api}) => {
                     {
                         api.slice(7, 9).map((item, index) => (
                             <PostDeitado 
+                            categoria='home'
                             idElemento={api.indexOf(item)}
                             key={index}
                             titulo={item.title}
@@ -68,6 +72,7 @@ const Home = ({api}) => {
                 {
                     api.slice(9, 12).map((item, index) => (
                             <Post
+                                categoria='home'
                                 idElemento={api.indexOf(item)}
                                 key={index}
                                 titulo={item.title}
@@ -82,6 +87,7 @@ const Home = ({api}) => {
                     {
                         api.slice(12, 14).map((item, index) => (
                             <PostDeitado 
+                            categoria='home'
                             idElemento={api.indexOf(item)}
                             key={index}
                             titulo={item.title}
@@ -93,6 +99,7 @@ const Home = ({api}) => {
                 {
                     api.slice(14, 16).map((item, index) => (
                             <Post
+                                categoria='home'
                                 idElemento={api.indexOf(item)}
                                 key={index}
                                 titulo={item.title}
@@ -107,6 +114,7 @@ const Home = ({api}) => {
                     {
                         api.slice(16, 18).map((item, index) => (
                             <PostDeitado 
+                            categoria='home'
                             idElemento={api.indexOf(item)}
                             key={index}
                             titulo={item.title}
@@ -118,6 +126,7 @@ const Home = ({api}) => {
                 {
                     api.slice(18, (api.length - 9)).map((item, index) => (
                             <Post
+                                categoria='home'
                                 idElemento={api.indexOf(item)}
                                 key={index}
                                 titulo={item.title}
@@ -135,6 +144,7 @@ const Home = ({api}) => {
                     {
                         api.slice((api.length - 9), (api.length - 8)).map((item, index)=>(
                             <Post
+                                categoria='home'
                                 idElemento={api.indexOf(item)}
                                 key={index}
                                 urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
@@ -149,6 +159,7 @@ const Home = ({api}) => {
                         {
                             api.slice((api.length - 7),(api.length - 5)).map((item, index) =>(
                                 <Post
+                                    categoria='home'
                                     idElemento={api.indexOf(item)}
                                     key={index}
                                     urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
@@ -166,6 +177,7 @@ const Home = ({api}) => {
                 {
                     opnioes.map((item, i) =>(
                         <PostDeitado
+                            categoria='home'
                             idElemento={api.indexOf(item)}
                             key={i}
                             titulo={item.title}
@@ -179,6 +191,7 @@ const Home = ({api}) => {
                 {
                     api.slice((api.length - 5), (api.length)).map((item, x) =>(
                         <Post
+                            categoria='home'
                             idElemento={api.indexOf(item)}
                             key={x}
                             urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}

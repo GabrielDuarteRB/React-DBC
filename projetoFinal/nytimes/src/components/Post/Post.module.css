@@ -23,19 +23,19 @@
     padding-bottom: 25px;
 }
 
-.postSubtopicos > div {
+.postSubtopicos > a > div{
     display: flex;
     gap: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; 
 }
 
-.postSubtopico > p {
+.postSubtopicos > a > p {
     color: #121212;
     line-height: 1.375rem;
     font-size: 15px;
 }
 
-.postSubtopicos > small {
+.postSubtopicos > a > small {
     color: #727272;
     font-size: 11px;
 }
