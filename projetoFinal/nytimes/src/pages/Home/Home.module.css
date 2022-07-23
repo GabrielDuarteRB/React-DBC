@@ -1,7 +1,7 @@
 .home{
     display: grid;
     gap: 24px;
-    grid-template-columns: 2.3fr 1fr;
+    grid-template-columns: auto 360px;
     margin-top: 25px;
 }
 
@@ -64,18 +64,18 @@
     border-bottom: 1px solid #5a5a5a;
     margin-bottom: 15px;
 }
-.postAside > div:first-child{
+.postAside > div:first-child > a{
     flex-direction: column-reverse;
     gap: 5px;
     cursor: pointer;
     padding-bottom: 15px;
     border-bottom: 1px solid #5a5a5a; 
 }
-.postAside > div:first-child > div > span{
+.postAside > div:first-child > a > div > span{
     color: #5a5a5a;
 }
 
-.postAside > div:first-child > div > h3:hover{
+.postAside > div:first-child > a > div > h3:hover{
     color: #5a5a5a;
 }
 .postAside >div:last-child{
@@ -84,7 +84,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
-.postAsideDuplo >div {
+.postAsideDuplo > div > a {
     flex-direction: column-reverse;
     justify-content: space-between;
     gap:7px;

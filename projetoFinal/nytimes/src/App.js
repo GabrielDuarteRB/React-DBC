@@ -39,7 +39,7 @@ function App() {
           <Route path='/Health' element={<Saude/>} />
           <Route path='/Science' element={<Ciencia/>} />
           <Route path='/Tech' element={<Tecnologia />} />
-          <Route path='/Post' element={<PagePost />} />
+          <Route exact path='/Post/:id/:categoria' element={<PagePost />} />
         </Routes>
         {/* <Footer/>  */}
       </BrowserRouter>
