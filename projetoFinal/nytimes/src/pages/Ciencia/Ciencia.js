@@ -84,6 +84,7 @@ const Ciencia = () =>{
                             />
                     ))
                 }
+                
             </div>
         </div>
     )
