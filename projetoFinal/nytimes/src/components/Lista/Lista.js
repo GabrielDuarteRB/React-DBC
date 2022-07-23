@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Lista.module.css'
 
 const Lista = ({titulo, itens}) => {
@@ -36,14 +37,17 @@ const ListaComIcones = ({titulo, itens}) => {
 }
 
 const ListaDeitada = ({itens}) => {
+
+    const links = ['Science', 'World', "Politics", 'Health', 'Tech']
+
     return(
         <>
             <ul className={styles.listaDeitada}>
                 {itens.map((i, index) => ( 
                     <li key={index}>
-                        <a href='#'>
+                        <Link to={links.includes(i) === true ? i : '#'}>
                             {i}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>

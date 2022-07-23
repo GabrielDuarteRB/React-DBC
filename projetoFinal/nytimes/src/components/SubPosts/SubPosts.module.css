@@ -1,0 +1,46 @@
+.categoria > ul{
+    border-bottom: 2px solid #121212;
+    justify-content: flex-start;
+    gap: 8px;
+    padding-bottom: 3px;
+}
+
+.categoria > ul > li:not(:last-child) {
+    border-right: 1px solid black;
+    padding-right: 8px;
+}
+
+.subPost {
+    display: grid;
+    grid-template-columns: 810px auto;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.subPost > div:first-of-type > div{
+    border: none;
+    border-right: 1px solid #727272;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding-right: 30px;
+    padding-top: 0;
+}
+
+.subPost > div:first-of-type > div > div{
+    text-align: center;
+}
+
+.subPost > div:first-of-type > div > div > p{
+    color: #727272;
+    font-size: 11px;
+}
+
+.subPost > div:last-of-type > div:not(:last-child) {
+    border-bottom: 1px solid #5a5a5a;
+}
+
+.ciencia > div:last-of-type > div:not(:last-child) {
+    border-bottom: 1px solid #DFDFDF;
+}
+
+

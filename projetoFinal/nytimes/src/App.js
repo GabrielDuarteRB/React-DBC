@@ -1,13 +1,15 @@
 import './App.css';
-import axios from 'axios'
 import {useEffect, useState} from 'react'
-import Footer from './components/Footer/Footer';
-import {Header} from './components/Header/Header';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import axios from 'axios';
 import Home from './pages/Home/Home';
 import Mundo from './pages/Mundo/Mundo';
 import Politica from './pages/Politica/Politica';
 import Saude from './pages/Saude/Saude';
 import Ciencia from './pages/Ciencia/Ciencia';
+import Tecnologia from './pages/Tecnologia/Tecnologia';
+import Footer from './components/Footer/Footer';
+import PagePost from './pages/PagePost/PagePost';
 
 function App() {
 
@@ -29,13 +31,19 @@ function App() {
 
   return (
     <div className="container">
-      {/* <Header/>
-      <Home api={informacoes}/>
-      <Footer/> */}
-      {/* <Mundo/> */}
-      {/* <Politica/>  */}
-      {/* <Saude/>  */}
-      <Ciencia/> 
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home api={informacoes}/>} />
+          <Route path='/World' element={<Mundo/>} />
+          <Route path='/Politics' element={<Politica/>} />
+          <Route path='/Health' element={<Saude/>} />
+          <Route path='/Science' element={<Ciencia/>} />
+          <Route path='/Tech' element={<Tecnologia />} />
+          <Route path='/Post' element={<PagePost />} />
+        </Routes>
+        {/* <Footer/>  */}
+      </BrowserRouter>
+
     </div>
      
   );

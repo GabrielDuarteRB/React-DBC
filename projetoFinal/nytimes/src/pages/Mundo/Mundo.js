@@ -1,12 +1,19 @@
 import { HeaderSubtopicos } from '../../components/Header/Header'
+import SubPosts from '../../components/SubPosts/SubPosts'
 
 const Mundo = () =>{
+
+    const categorias = ['AFRICA', 'AMERICAS', 'ASIA', 'AUSTRALIA', 'CANADA', 'EUROPE','MIDDLE EAST']
+
     return(
         <div>
             <HeaderSubtopicos
-                titulo='World'
+                titulo='World News'
             />
-            <h1>mundo</h1>
+            <SubPosts 
+                categorias={categorias}
+                pagina='world'
+            />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import {Post, PostDeitado} from "../../components/Post/Post"
 import styles from './Home.module.css'
+import {Header} from '../../components/Header/Header';
 
 const Home = ({api}) => {
 
@@ -11,171 +12,176 @@ const Home = ({api}) => {
     
 
   return (
-    <section className={styles.home}>
-        <div>
-            {
-                api.slice(0, 2).map((item, index) => (
-                        <Post
-                            key={index}
-                            titulo={item.title}
-                            conteudo={item.abstract}
-                            urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
-                            largura='500px'
-                            altura='300px'
-                        />
-                ))
-            }
-            <div className={styles.postDeitado}>
+    <>
+        <Header />
+        <section className={styles.home}>
+            <div>
                 {
-                    api.slice(2, 4).map((item, index) => (
-                        <PostDeitado 
-                        key={index}
-                        titulo={item.title}
-                        conteudo={item.abstract}
-                        />
-                    ))
-                }
-            </div>
-            {
-                api.slice(4, 7).map((item, index) => (
-                        <Post
-                            key={index}
-                            titulo={item.title}
-                            conteudo={item.abstract}
-                            urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
-                            largura='500px'
-                            altura='300px'
-                        />
-                ))
-            }
-            <div className={styles.postDeitado}>
-                {
-                    api.slice(7, 9).map((item, index) => (
-                        <PostDeitado 
-                        key={index}
-                        titulo={item.title}
-                        conteudo={item.abstract}
-                        />
-                    ))
-                }
-            </div>
-            {
-                api.slice(9, 12).map((item, index) => (
-                        <Post
-                            key={index}
-                            titulo={item.title}
-                            conteudo={item.abstract}
-                            urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
-                            largura='500px'
-                            altura='300px'
-                        />
-                ))
-            }
-            <div className={styles.postDeitado}>
-                {
-                    api.slice(12, 14).map((item, index) => (
-                        <PostDeitado 
-                        key={index}
-                        titulo={item.title}
-                        conteudo={item.abstract}
-                        />
-                    ))
-                }
-            </div>
-            {
-                api.slice(14, 16).map((item, index) => (
-                        <Post
-                            key={index}
-                            titulo={item.title}
-                            conteudo={item.abstract}
-                            urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
-                            largura='500px'
-                            altura='300px'
-                        />
-                ))
-            }
-            <div className={styles.postDeitado}>
-                {
-                    api.slice(16, 18).map((item, index) => (
-                        <PostDeitado 
-                        key={index}
-                        titulo={item.title}
-                        conteudo={item.abstract}
-                        />
-                    ))
-                }
-            </div>
-            {
-                api.slice(18, (api.length - 9)).map((item, index) => (
-                        <Post
-                            key={index}
-                            titulo={item.title}
-                            conteudo={item.abstract}
-                            urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
-                            largura='500px'
-                            altura='300px'
-                        />
-                ))
-            }
-
-        </div>
-        <aside>
-            <div className={styles.postAside}>
-                {
-                    api.slice((api.length - 9), (api.length - 8)).map((item, index)=>(
-                        <Post
-                            key={index}
-                            urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
-                            titulo={item.title}
-                            conteudo= {item.abstract}
-                            largura='100%'
-                            altura ='250px'
-                        />
-                    ))
-                }
-                <div className={styles.postAsideDuplo}>
-                    {
-                        api.slice((api.length - 7),(api.length - 5)).map((item, index) =>(
+                    api.slice(0, 2).map((item, index) => (
                             <Post
                                 key={index}
-                                urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
                                 titulo={item.title}
-                                largura='170px'
-                                altura ='100px'
+                                conteudo={item.abstract}
+                                urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                                largura='500px'
+                                altura='300px'
+                            />
+                    ))
+                }
+                <div className={styles.postDeitado}>
+                    {
+                        api.slice(2, 4).map((item, index) => (
+                            <PostDeitado 
+                            key={index}
+                            titulo={item.title}
+                            conteudo={item.abstract}
                             />
                         ))
                     }
                 </div>
+                {
+                    api.slice(4, 7).map((item, index) => (
+                            <Post
+                                key={index}
+                                titulo={item.title}
+                                conteudo={item.abstract}
+                                urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                                largura='500px'
+                                altura='300px'
+                            />
+                    ))
+                }
+                <div className={styles.postDeitado}>
+                    {
+                        api.slice(7, 9).map((item, index) => (
+                            <PostDeitado 
+                            key={index}
+                            titulo={item.title}
+                            conteudo={item.abstract}
+                            />
+                        ))
+                    }
+                </div>
+                {
+                    api.slice(9, 12).map((item, index) => (
+                            <Post
+                                key={index}
+                                titulo={item.title}
+                                conteudo={item.abstract}
+                                urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                                largura='500px'
+                                altura='300px'
+                            />
+                    ))
+                }
+                <div className={styles.postDeitado}>
+                    {
+                        api.slice(12, 14).map((item, index) => (
+                            <PostDeitado 
+                            key={index}
+                            titulo={item.title}
+                            conteudo={item.abstract}
+                            />
+                        ))
+                    }
+                </div>
+                {
+                    api.slice(14, 16).map((item, index) => (
+                            <Post
+                                key={index}
+                                titulo={item.title}
+                                conteudo={item.abstract}
+                                urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                                largura='500px'
+                                altura='300px'
+                            />
+                    ))
+                }
+                <div className={styles.postDeitado}>
+                    {
+                        api.slice(16, 18).map((item, index) => (
+                            <PostDeitado 
+                            key={index}
+                            titulo={item.title}
+                            conteudo={item.abstract}
+                            />
+                        ))
+                    }
+                </div>
+                {
+                    api.slice(18, (api.length - 9)).map((item, index) => (
+                            <Post
+                                key={index}
+                                titulo={item.title}
+                                conteudo={item.abstract}
+                                urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                                largura='500px'
+                                altura='300px'
+                            />
+                    ))
+                }
+
             </div>
-            
-            <div className={styles.opnioes}>
-                <h1>Opnion</h1>
-            {
-                opnioes.map((item, i) =>(
-                    <PostDeitado
-                        key={i}
-                        titulo={item.title}
-                        criador={item.kicker}
-                    />
-                ))
-            }
-            </div>
-            <div className={styles.caseMissed}>
-                <h1>In Case You Missed It</h1>
-            {
-                api.slice((api.length - 5), (api.length)).map((item, x) =>(
-                    <Post
-                        key={x}
-                        urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
-                        titulo={item.title}
-                        largura= '100px'
-                        altura= '100px'
-                    />
-                ))
-            }
-            </div>
-        </aside>
-    </section>
+            <aside>
+                <div className={styles.postAside}>
+                    {
+                        api.slice((api.length - 9), (api.length - 8)).map((item, index)=>(
+                            <Post
+                                key={index}
+                                urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                                titulo={item.title}
+                                conteudo= {item.abstract}
+                                largura='100%'
+                                altura ='250px'
+                            />
+                        ))
+                    }
+                    <div className={styles.postAsideDuplo}>
+                        {
+                            api.slice((api.length - 7),(api.length - 5)).map((item, index) =>(
+                                <Post
+                                    key={index}
+                                    urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                                    titulo={item.title}
+                                    largura='170px'
+                                    altura ='100px'
+                                />
+                            ))
+                        }
+                    </div>
+                </div>
+                
+                <div className={styles.opnioes}>
+                    <h1>Opnion</h1>
+                {
+                    opnioes.map((item, i) =>(
+                        <PostDeitado
+                            key={i}
+                            titulo={item.title}
+                            criador={item.kicker}
+                        />
+                    ))
+                }
+                </div>
+                <div className={styles.caseMissed}>
+                    <h1>In Case You Missed It</h1>
+                {
+                    api.slice((api.length - 5), (api.length)).map((item, x) =>(
+                        <Post
+                            key={x}
+                            urlImagem={item.multimedia !== null ? item.multimedia[1].url : semUrl}
+                            titulo={item.title}
+                            largura= '100px'
+                            altura= '100px'
+                        />
+                    ))
+                }
+                </div>
+            </aside>
+        </section>
+
+    </>
+
   )
 }
 export default Home

@@ -102,3 +102,25 @@
     font-size: xx-large;
     margin-top: 60px;
 }
+
+/* header PagePost */
+
+.headerPagePost > div:nth-child(2) > ul {
+    border-bottom: 1px solid #1f1f1f;
+    justify-content: center;
+    gap: 15px;
+    padding: 8px 15px;
+}
+
+.headerPagePost > div:nth-child(2) > ul > li:first-child{
+    font-weight: bold;
+    border-right: 1px solid #1f1f1f;
+}
+
+.headerPagePost > div:nth-child(2) > ul > li > a{
+    font-size: 14px
+}
+
+.headerPagePost > div:nth-child(2) > ul > li:not(:last-child){
+    padding-right: 15px;
+}

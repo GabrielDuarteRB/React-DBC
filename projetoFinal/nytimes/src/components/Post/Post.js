@@ -1,15 +1,19 @@
+import { Link } from 'react-router-dom'
 import styles from './Post.module.css'
 
 const Post = ({titulo, conteudo, urlImagem, altura, largura, criador}) => {
+
   return (
-    <div className={styles.post}>
-        <div>
-            <h3>{titulo}</h3>
-            <small>{conteudo}</small>
-            <p>{criador}</p>
-        </div>
-        <img style={{width: largura, height: altura}} src={urlImagem}/>
-    </div>
+    // <Link to='/Post'>
+      <div className={styles.post}>
+            <div>
+                <h3>{titulo}</h3>
+                <small>{conteudo}</small>
+                <p>{criador}</p>
+            </div>
+            <img style={{width: largura, height: altura}} src={urlImagem}/>
+      </div>
+    // </Link> 
   )
 }
 
