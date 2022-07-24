@@ -14,6 +14,7 @@ import PagePost from './pages/PagePost/PagePost';
 function App() {
 
   const [informacoes, setInformacoes] = useState([])
+  const [url, setUlr] = useState('')
 
   const api = async () => {
     try {
@@ -24,11 +25,12 @@ function App() {
     }
   }
 
+  
   useEffect(() => {
     api()
+    
   }, [])
   
-
   return (
     <div className="container">
       <BrowserRouter>
@@ -41,7 +43,7 @@ function App() {
           <Route path='/Tech' element={<Tecnologia />} />
           <Route exact path='/Post/:id/:categoria' element={<PagePost />} />
         </Routes>
-        {/* <Footer/>  */}
+        <Footer url={url}/> 
       </BrowserRouter>
 
     </div>

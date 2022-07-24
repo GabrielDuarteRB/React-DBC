@@ -37,6 +37,7 @@ const SubPosts = ({categorias, pagina}) => {
                         informacoes.slice(0, 1).map((item, index) => (
                                 <Post
                                     key={index}
+                                    categoria={pagina}
                                     idElemento={informacoes.indexOf(item)}
                                     titulo={item.title}
                                     conteudo={item.abstract}
@@ -71,8 +72,10 @@ const SubPosts = ({categorias, pagina}) => {
                 {
                     informacoes.slice(4, informacoes.length).map((item, index) => (
                             <PostLatest
-                                tempo={moment(item.published_date).format('MMMM DD, YYYY')}
                                 key={index}
+                                categoria={pagina}
+                                idElemento={informacoes.indexOf(item)}
+                                tempo={moment(item.published_date).format('MMMM DD, YYYY')}
                                 titulo={item.title}
                                 conteudo={item.abstract}
                                 criador={item.byline}

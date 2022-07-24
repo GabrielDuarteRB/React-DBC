@@ -5,7 +5,7 @@
 }
 .inicialHeader > div:first-child {
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     gap: 10px;
 }
 .inicialHeader > div:first-child span{
@@ -27,10 +27,11 @@
     gap: 5px;
 }
 .midHeader{
+    align-items: center;
+    border-bottom: 1px solid rgb(226, 226, 226);
     display: flex;
     justify-content: space-between;
-    padding: 10px 0 10px;
-    border-bottom: 1px solid rgb(226, 226, 226);
+    padding: 3px 0;
 }
 .midHeader svg{
     height: 56px;
@@ -39,6 +40,11 @@
 .midHeader > div:first-child > span{
     font-weight: bold;
 }
+
+.midHeader > div:first-child{
+    font-size: 12px;
+}
+
 .endHeader {
     padding: 0 50px;
 }

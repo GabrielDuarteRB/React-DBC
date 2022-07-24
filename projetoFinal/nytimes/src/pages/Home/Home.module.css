@@ -2,7 +2,14 @@
     display: grid;
     gap: 24px;
     grid-template-columns: auto 360px;
-    margin-top: 25px;
+}
+
+.home  > div > div:first-of-type > a {
+    border-top: none
+}
+
+.home  > div > div:first-of-type > a {
+    border-top: none
 }
 
 .home > div:first-child {
@@ -11,13 +18,13 @@
 }
 
 .home > div:first-child::after {
-    border-right: 1px solid #121212;
+    border-right: 1px solid #dfdfdf;
     content: '';
     position: absolute;
     display: block;
-    top: 32px;
+    top: 40px;
     right: -12px;
-    height: 98.5%;
+    height: 99.3%;
 }
 
 .postDeitado {
@@ -50,25 +57,31 @@
 .opnioes h1{
     margin-bottom: 10px;
 }
-.opnioes > div > span{
+.opnioes > div > a > span{
     color: #5a5a5a;
     text-transform: uppercase;
     font-size: 12px;
 }
-.opnioes > div > h3{
+.opnioes > div > a > h3{
     color: #121212;
     padding: 5px 0 5px;
     font-size: 16px;
 }
-.opnioes > div{
-    border-bottom: 1px solid #5a5a5a;
+.opnioes > div {
+    border-bottom: 1px solid #DFDFDF;
     margin-bottom: 15px;
 }
+
+.opnioes > div:last-child {
+    border-bottom: 1px solid #121212;
+}
+
 .postAside > div:first-child > a{
     flex-direction: column-reverse;
     gap: 5px;
     cursor: pointer;
     padding-bottom: 15px;
+    border-top: none;
     border-bottom: 1px solid #5a5a5a; 
 }
 .postAside > div:first-child > a > div > span{
@@ -96,6 +109,10 @@
 }
 /* segunda parte*/
 /* Observação: quando chama a classe post ela coloca uma border-top automática, se usar pra criar em outra parte, vem com ela; */
-.caseMissed > div > div:nth-child(1){
+.caseMissed > div > div:nth-child(1) {
     border: none;
+}
+
+.caseMissed > div:first-of-type > a {
+    border-top: none
 }

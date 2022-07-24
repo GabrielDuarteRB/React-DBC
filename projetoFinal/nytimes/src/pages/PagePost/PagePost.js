@@ -15,23 +15,23 @@ const PagePost = () => {
 
     const [resultado, setResultado] = useState([])
     const [urlImg, setUrlImg] = useState('')
+    const [facet, setFacet] = useState([])
 
     const api = async () => {
         try {
           const {data} = await axios.get(`https://api.nytimes.com/svc/topstories/v2/${url[3]}.json?api-key=wRefsADGPRpDZ6hLhaEVEVtTAmUXEOyW`)
-          console.log(data.results)
-          data.results.map((item, i) =>{
+          data.results.map((item, i) => {
             if(parseInt(i) === parseInt(url[2])) {
               if(item.multimedia !== null){
                 item.multimedia.forEach((x,index) =>{
-                  if(index == 0){
+                  if(index === 0){
                     setUrlImg(x.url)
                   }
                 })
               }else{
                 setUrlImg(semUrl)
               }
-                console.log('teste')
+                setFacet(item.des_facet)
                 setResultado(item)
             }
           })     
@@ -47,8 +47,9 @@ const PagePost = () => {
   return (
     <div className={styles.pagePost}>
         <HeaderPagePost 
-        facet={[resultado.des_facet]}/> 
-        <Post
+        facet={facet}/> 
+
+        <Post 
         titulo={resultado.title}
         conteudo={resultado.abstract}
         urlImagem={urlImg}

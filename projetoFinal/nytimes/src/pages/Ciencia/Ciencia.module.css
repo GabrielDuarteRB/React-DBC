@@ -2,4 +2,8 @@
     border-bottom: 1px solid #DFDFDF;
 }
 
+.ciencia > div:last-of-type > div:not(:first-child) {
+    margin-top: 24px;
+}
+
 

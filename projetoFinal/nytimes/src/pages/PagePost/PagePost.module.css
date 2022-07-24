@@ -1,10 +1,14 @@
 .pagePost > div > a{
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     border: none;
+    cursor:inherit;
+    flex-direction: column;
+    justify-content: center;
 }
 .pagePost >div > a > div{
+    align-items: center ;
+    display: flex;
+    flex-direction: column;
     padding: 0 150px;
 }
 .pagePost > div > a > div> h3{
@@ -14,5 +18,4 @@
 .pagePost > div > a > div> small{
     text-align: center;
     font-size: 23px;
-
 }
