@@ -1,43 +1,57 @@
-.post{
-    border-top: 1px solid #121212;
+.post > a{
+    border-top: 1px solid #DFDFDF;
+    cursor: pointer;
     display: flex;
     gap: 40px;
+    justify-content: space-between;
     padding-top: 15px;
     margin-top: 25px;
 }
 
-.post > div > h3 {
+.post > a > div > h3 {
     color: #121212;
     margin-bottom: 8px;
 }
-.post > div > a {
+.post > a > div > span {
     color: #5a5a5a;
 }
 
+/* post Subtopicos */
+
 .postSubtopicos {
+    cursor: pointer;
     margin: 0 0 25px 30px;
     padding-bottom: 25px;
 }
 
-.postSubtopicos > div {
+.postSubtopicos > a > div{
     display: flex;
     gap: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; 
 }
 
-.postSubtopico > p {
+.postSubtopicos > a > p {
     color: #121212;
     line-height: 1.375rem;
     font-size: 15px;
 }
 
-.postSubtopicos > small {
+.postSubtopicos > a > small {
     color: #727272;
     font-size: 11px;
 }
 
-.postLatest {
+/* Post Deitado */
+
+.postDeitado {
+    cursor: pointer;
+}
+
+/* Post Latest */
+
+.postLatest > a {
     align-items: flex-start;
+    cursor: pointer;
     display: grid;
     justify-content: center;
     grid-template-columns: 0.2fr 1fr 0.2fr;
@@ -46,7 +60,7 @@
     padding-bottom:16px;
 }
 
-.postLatest > div{
+.postLatest > a > div{
     display: flex;
     flex-direction: column;
     gap: 8px;

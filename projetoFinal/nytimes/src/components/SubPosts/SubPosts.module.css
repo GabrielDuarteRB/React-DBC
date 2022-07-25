@@ -16,31 +16,33 @@
     margin-top: 25px;
     margin-bottom: 100px;
 }
-
-.subPost > div:first-of-type > div{
-    border: none;
+.subPost > div:first-child{
     border-right: 1px solid #727272;
+}
+.subPost > div:first-of-type > div > a {
+    border: none;
     flex-direction: column-reverse;
     margin: 0;
     padding-right: 30px;
     padding-top: 0;
 }
 
-.subPost > div:first-of-type > div > div{
+.subPost > div:first-of-type > div > a{
     text-align: center;
 }
 
-.subPost > div:first-of-type > div > div > p{
-    color: #727272;
-    font-size: 11px;
+.subPost > div:first-of-type > div > a > div{
+    font-size: 22px;
+}
+.subPost > div:first-of-type > div > a > div > p{
+    font-size: 16px;
 }
 
 .subPost > div:last-of-type > div:not(:last-child) {
     border-bottom: 1px solid #5a5a5a;
 }
+.subPost > div:last-child
 
 .ciencia > div:last-of-type > div:not(:last-child) {
     border-bottom: 1px solid #DFDFDF;
 }
-
-

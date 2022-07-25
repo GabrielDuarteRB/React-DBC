@@ -4,6 +4,7 @@ import styles from './SubPosts.module.css'
 import moment from 'moment'
 import axios from 'axios'
 import { useEffect, useState } from "react"
+import Footer from "../Footer/Footer"
 
 const SubPosts = ({categorias, pagina}) => {
 
@@ -37,6 +38,8 @@ const SubPosts = ({categorias, pagina}) => {
                         informacoes.slice(0, 1).map((item, index) => (
                                 <Post
                                     key={index}
+                                    categoria={pagina}
+                                    idElemento={informacoes.indexOf(item)}
                                     titulo={item.title}
                                     conteudo={item.abstract}
                                     criador={item.byline}
@@ -51,6 +54,8 @@ const SubPosts = ({categorias, pagina}) => {
                     {
                         informacoes.slice(1, 4).map((item, index) => (
                                 <PostLateralSubtopicos
+                                    categoria={pagina}
+                                    idElemento={informacoes.indexOf(item)}
                                     key={index}
                                     titulo={item.title}
                                     conteudo={item.abstract}
@@ -68,8 +73,10 @@ const SubPosts = ({categorias, pagina}) => {
                 {
                     informacoes.slice(4, informacoes.length).map((item, index) => (
                             <PostLatest
-                                tempo={moment(item.published_date).format('MMMM DD, YYYY')}
                                 key={index}
+                                categoria={pagina}
+                                idElemento={informacoes.indexOf(item)}
+                                tempo={moment(item.published_date).format('MMMM DD, YYYY')}
                                 titulo={item.title}
                                 conteudo={item.abstract}
                                 criador={item.byline}
@@ -81,6 +88,7 @@ const SubPosts = ({categorias, pagina}) => {
                 }
                 
             </div>
+            <Footer />
         </>
   )
 }

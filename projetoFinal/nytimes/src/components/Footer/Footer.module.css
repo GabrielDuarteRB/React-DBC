@@ -22,11 +22,11 @@ footer > div:first-of-type > a {
     align-items: center ;
     color: rgb(86, 123, 149);
     display: flex;
-    font-size: 10px;
+    font-size: 9px;
     text-decoration: none;
 }
 
-footer > div > svg {
+footer > div > a:first-child > svg {
     height: 44px;
     width: 184px;
 }

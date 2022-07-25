@@ -1,0 +1,7 @@
+.politica > div:last-of-type > div:not(:last-child) {
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.politica > div:last-of-type > div:not(:first-child) {
+    margin-top: 24px;
+}
