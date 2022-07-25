@@ -45,6 +45,21 @@
     font-size: 12px;
 }
 
+.midHeader > div:last-child > div {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.midHeader > div:last-child > div > svg {
+    width: 20px;
+}
+
+.midHeader > div:last-child > div > span:not(:first-of-type) {
+    font-size: 12px;
+    color: rgb(153, 153, 153)
+}
+
 .endHeader {
     padding: 0 50px;
 }

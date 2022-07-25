@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from "react"
+import Footer from '../../components/Footer/Footer'
 import { HeaderPagePost } from "../../components/Header/Header"
 import { Post, PostApi } from "../../components/Post/Post"
 import styles from './PagePost.module.css'
@@ -45,18 +46,22 @@ const PagePost = () => {
 
     console.log(`esse eh o resultado: `, resultado)   
   return (
-    <div className={styles.pagePost}>
-        <HeaderPagePost 
-        facet={facet}/> 
+    <>
+      <div className={styles.pagePost}>
+          <HeaderPagePost 
+          facet={facet}/> 
 
-        <Post 
-        titulo={resultado.title}
-        conteudo={resultado.abstract}
-        urlImagem={urlImg}
-        altura='560px'
-        largura='100%'
-        />
-    </div>
+          <Post 
+          titulo={resultado.title}
+          conteudo={resultado.abstract}
+          urlImagem={urlImg}
+          altura='560px'
+          largura='100%'
+          />
+
+      </div>
+      <Footer />
+    </>
   )
 
 }

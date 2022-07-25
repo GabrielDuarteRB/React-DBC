@@ -4,6 +4,7 @@ import styles from './SubPosts.module.css'
 import moment from 'moment'
 import axios from 'axios'
 import { useEffect, useState } from "react"
+import Footer from "../Footer/Footer"
 
 const SubPosts = ({categorias, pagina}) => {
 
@@ -87,6 +88,7 @@ const SubPosts = ({categorias, pagina}) => {
                 }
                 
             </div>
+            <Footer />
         </>
   )
 }
